@@ -13,6 +13,10 @@ const Initiate = async () => {
 
     globalThis.Server = Server;
 
+    const InitializeSocket = get.modules("InitializeSocket");
+
+    InitializeSocket();
+
     // Starting the Server
     await Server.start();
 
