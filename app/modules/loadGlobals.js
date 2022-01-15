@@ -27,3 +27,7 @@ globalThis.get.__proto__.routes = (path) => {
 globalThis.get.__proto__.data = (path) => {
     return globalThis.get(path, `${$ROOT}app/data/`);
 }
+
+globalThis.get.__proto__.sockets = (path) => {
+    return globalThis.get(path, `${$ROOT}app/socket/`);
+}
